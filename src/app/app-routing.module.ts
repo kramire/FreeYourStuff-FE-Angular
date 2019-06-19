@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { StuffListComponent } from './components/stuff-list/stuff-list.component';
+import { StuffListContainerComponent } from './containers/stuff-list-container/stuff-list-container.component';
 
 const routes: Routes = [
   {path: '', component: DashboardComponent},
-  {path: 'getStuff', component: StuffListComponent}
+  {path: 'list', component: StuffListContainerComponent}
 ];
 
 @NgModule({
