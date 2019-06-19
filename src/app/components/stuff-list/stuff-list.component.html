@@ -1,4 +1,5 @@
-<div *ngIf="gifts">
+<div class="stuffList" *ngIf="gifts">
+  <h2> Find a gift </h2>
   <div *ngFor="let gift of gifts">
     <app-stuff-list-item [gift]="gift"></app-stuff-list-item>
   </div>

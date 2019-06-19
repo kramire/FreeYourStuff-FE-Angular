@@ -1,3 +1,19 @@
-<div *ngIf="gift">
-  <h2>{{gift.picture}}</h2>
+<div class="stuff" *ngIf="gift">
+
+  <div routerLink="map">
+    <div class="picture">
+      <img src={{gift.picture}} alt="findAGift"/>
+      <p class="dropDistance">
+        {{gift.address}}
+        <span>Distance here km</span> 
+        <!-- <i class="fas fa-location-arrow"style={style}></i> -->
+      </p>
+    </div>
+  </div>
+    
+    <div class="tagss">
+        <p class="listTag" *ngFor="let tag of gift.tags">{{tag}}</p>
+    </div>
+    <div class="divider"></div>
+
 </div>
