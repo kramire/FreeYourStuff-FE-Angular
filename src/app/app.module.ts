@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { StuffListComponent } from './components/stuff-list/stuff-list.component';
 import { StuffListItemComponent } from './components/stuff-list-item/stuff-list-item.component';
+import { StuffListContainerComponent } from './containers/stuff-list-container/stuff-list-container.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { StuffListItemComponent } from './components/stuff-list-item/stuff-list-
     HeaderComponent,
     DashboardComponent,
     StuffListComponent,
-    StuffListItemComponent
+    StuffListItemComponent,
+    StuffListContainerComponent
   ],
   imports: [
     BrowserModule,

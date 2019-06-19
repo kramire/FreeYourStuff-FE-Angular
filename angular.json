@@ -23,8 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+              "src/styles.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true
