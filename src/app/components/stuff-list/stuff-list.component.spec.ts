@@ -1,6 +1,10 @@
+import { Component } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { StuffListComponent } from './stuff-list.component';
+
+
+@Component({selector: 'app-stuff-list-item', template: ''})
+class StuffListItemComponent {}
 
 describe('StuffListComponent', () => {
   let component: StuffListComponent;
@@ -8,7 +12,7 @@ describe('StuffListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StuffListComponent ]
+      declarations: [ StuffListComponent, StuffListItemComponent ]
     })
     .compileComponents();
   }));
