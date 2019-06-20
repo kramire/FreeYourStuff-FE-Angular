@@ -1,15 +1,16 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MapContainerComponent } from './map-container.component';
+
 import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
-import { StuffListContainerComponent } from './stuff-list-container.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiClientStuffService } from '../../services/api-client-stuff.service';
 import { Observable} from 'rxjs';
 import { of } from 'rxjs';
 import { Gift } from '../../Gift';
 
-describe('StuffListContainerComponent', () => {
-  let component: StuffListContainerComponent;
-  let fixture: ComponentFixture<StuffListContainerComponent>;
+describe('MapContainerComponent', () => {
+  let component: MapContainerComponent;
+  let fixture: ComponentFixture<MapContainerComponent>;
 
   const dummyStuffs = [
     {
@@ -33,16 +34,16 @@ describe('StuffListContainerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule],
-      declarations: [ StuffListContainerComponent],
-      providers: [{provide: ApiClientStuffService, useValue: dummyApiClientStuffService}],
+      imports: [ HttpClientModule ],
+      declarations: [ MapContainerComponent ],
+      providers: [ {provide: ApiClientStuffService, useValue: dummyApiClientStuffService} ],
       schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StuffListContainerComponent);
+    fixture = TestBed.createComponent(MapContainerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
